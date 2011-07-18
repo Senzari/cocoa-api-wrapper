@@ -46,6 +46,7 @@ typedef enum {
 
 @property (nonatomic, assign) SCResponseFormat responseFormat;
 @property (nonatomic, readonly, getter=isAuthenticated) BOOL authenticated;	// this might change dynamically. Not observable, atm
+@property (nonatomic, assign) id<SCSoundCloudAPIDelegate> delegate;
 
 
 /*!
